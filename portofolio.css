@@ -2,20 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-    width: 7px;
-    height: 3px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #cdac8a, #b9bb8f);
-    border-radius: 60px;
-}
-
-::-webkit-scrollbar-track {
-    background: #474747;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     background-color: white;
@@ -43,65 +29,6 @@ body {
     opacity: 1;
 }
 
-.slide-down {
-    transform: translateY(50px);
-    opacity: 0;
-    transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
-}
-
-.slide-down.visible {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.slide-left {
-    transform: translateX(50px);
-    opacity: 0;
-    transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
-}
-
-.slide-left.visible {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.slide-right {
-    transform: translateX(-50px);
-    opacity: 0;
-    transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
-}
-
-.slide-right.visible {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.typewriter {
-    overflow: hidden;
-    border-right: .15em solid black;
-    white-space: nowrap;
-    animation: typing 3s steps(30, end) forwards, blink 1s infinite; /* Tambah animasi blink */
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink {
-    50% { border-right-color: transparent; } /* Sembunyikan kursor */
-}
-
-@keyframes textShadow {
-    0% { text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
-    50% { text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-    100% { text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
-}
-.text-shadow {
-    animation: textShadow 2s infinite;
-}
-
-
 header {
     padding: 1rem;
     display: flex;
@@ -125,7 +52,6 @@ header .nav-links {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 1rem;
-    background: transparent;
 }
 
 header .nav-links a {
@@ -145,12 +71,6 @@ header .social-links {
     margin-top: 1rem;
 }
 
-header .social-links a {
-    text-decoration: none;
-    color: black;
-    margin: 0.5rem;
-}
-
 main {
     padding: 2rem;
     display: flex;
@@ -161,22 +81,10 @@ main {
     margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-    main {
-        flex-direction: row;
-    }
-}
-
 main img {
     width: 100%;
     max-width: 24rem;
     margin-bottom: 2rem;
-}
-
-@media (min-width: 768px) {
-    main img {
-        margin-bottom: 0;
-    }
 }
 
 main h1 {
@@ -190,19 +98,6 @@ main p {
     margin-bottom: 1rem;
 }
 
-main a {
-    text-decoration: none;
-    color: black;
-    margin-right: 1rem;
-}
-
-main a.bg-black {
-    background-color: black;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-}
-
 section {
     padding: 2rem;
     max-width: 1200px;
@@ -212,47 +107,6 @@ section {
 section h2 {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-section .grid {
-    display: grid;
-    gap: 2rem;
-}
-
-section .grid-cols-1 {
-    grid-template-columns: 1fr;
-}
-
-section .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-section .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-section .border {
-    border: 1px solid #e2e2e2;
-    padding: 1rem;
-    border-radius: 0.25rem;
-}
-
-section img {
-    width: 100%;
-    height: 12rem;
-    object-fit: cover;
-    margin-bottom: 1rem;
-}
-
-section h3 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-section p {
-    color: #4a4a4a;
     margin-bottom: 1rem;
 }
 
@@ -279,10 +133,6 @@ footer .social-links a {
     margin: 0 0.5rem;
 }
 
-footer .social-links a:hover {
-    color: #0073e6;
-}
-
 footer .back-to-top {
     display: inline-block;
     background-color: black;
@@ -299,14 +149,7 @@ footer .back-to-top:hover {
     background-color: #333;
 }
 
-.menu-toggle {
-    display: none;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    cursor: pointer;
-}
-
+/* Responsive Styles */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -333,124 +176,14 @@ footer .back-to-top:hover {
     }
 }
 
-.project-card img {
-    transition: transform 0.3s ease-in-out;
-}
-
-.project-card:hover img {
-    transform: scale(1.05);
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-}
 @media (min-width: 640px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media (min-width: 1024px) {
     .grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-.card {
-    background-color: #ffffff;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    text-align: center;
-}
-.icon-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-.icon {
-    padding: 1rem;
-    border-radius: 50%;
-}
-.icon i {
-    color: #ffffff;
-    font-size: 2rem;
-}
-.title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-.description {
-    color: #718096;
-    margin-bottom: 1rem;
-}
-.border-t {
-    border-top-width: 4px;
-    margin-top: 1rem;
-}
-.border-blue {
-    border-color: #4299e1;
-}
-.border-red {
-    border-color: #f56565;
-}
-.border-yellow {
-    border-color: #ecc94b;
-}
-.border-purple {
-    border-color: #9f7aea;
-}
-.border-green {
-    border-color: #48bb78;
-}
-.border-indigo {
-    border-color: #667eea;
-}
-.bg-blue {
-    background-color: #4299e1;
-}
-.bg-red {
-    background-color: #f56565;
-}
-.bg-yellow {
-    background-color: #ecc94b;
-}
-.bg-purple {
-    background-color: #9f7aea;
-}
-.bg-green {
-    background-color: #48bb78;
-}
-.bg-indigo {
-    background-color: #667eea;
-}
-#coming-soon-card {
-    display: none; /* Sembunyikan card secara default */
-
-}
-
-#coming-soon-card.visible {
-    display: flex; /* Tampilkan card ketika visible */
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-.button {
-    margin: 0 10px; /* Jarak antar tombol */
-}
-</style>
