@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,10 +20,9 @@
         <div class="nav-links" id="nav-links">
             <a class="text-black hover:bg-transparent hover:border-b-2 hover:border-black" href="#home">Home</a>
             <a class="text-gray-400 hover:bg-transparent hover:border-b-2 hover:border-black" href="#Service">Service</a>
-            <a class="text-gray-400 hover:bg-transparent hover:border-b-2 hover:border-black" href="#about">about</a>
-            <a class="text-gray-400 hover:bg-transparent hover:border-b-2 hover:border-black" href="#skill">skills</a>
+            <a class="text-gray-400 hover:bg-transparent hover:border-b-2 hover:border-black" href="#about">About</a>
+            <a class="text-gray-400 hover:bg-transparent hover:border-b-2 hover:border-black" href="#skill">Skills</a>
             <a class="text-gray-400 hover:bg-transparent hover:border-b-2 hover:border-black" href="#projects">Projects</a>
-
         </div>
         <div class="social-links">
             <a class="text-black mx-2" href="https://x.com/rolland_AP"><i class="fab fa-twitter"></i></a>
@@ -31,177 +31,137 @@
             <a class="text-black mx-2" href="https://www.instagram.com/rollandaditya/#"><i class="fab fa-instagram"></i></a>
         </div>
     </header>
+
     <main class="flex flex-col md:flex-row items-center justify-between p-8" id="home">
-        <div class="relative ">
-            <img src="gambar/rolland.jpeg" alt="Artistic portrait of a man with glasses and colorful splashes" class=" slide-up rounded-full w-full md:w-96" />
+        <div class="relative">
+            <img src="gambar/rolland.jpeg" alt="Artistic portrait of a man with glasses and colorful splashes" class="slide-up rounded-full w-full md:w-96" />
         </div>
         <div class="mt-8 md:mt-0 md:ml-8 md:pl-8">
-            <h1 class="text-4xl font-bold font-family-Montserrat ma mb-4  typewriter">Hallo, saya Rolland Aditya P.</h1>
-            <p class="text-gray-700 mb-4 slide-right">sebagai IT freelancer, saya menawarkan berbagai jenis service dengan skill yang baik. terkait informasi lebih lanjut mengenai saya , bisa anda lihat di web dan cv saya yang bisa anda download dibawah ini. jika tertatik bisa hubungi saya pada contact dan platform yang tersedia</p><br>
+            <h1 class="text-4xl font-bold font-family-Montserrat ma mb-4 typewriter">Hallo, saya Rolland Aditya P.</h1>
+            <p class="text-gray-700 mb-4 slide-right">Sebagai IT freelancer, saya menawarkan berbagai jenis service dengan skill yang baik. Terkait informasi lebih lanjut mengenai saya, bisa Anda lihat di web dan CV saya yang bisa Anda download di bawah ini. Jika tertarik, bisa hubungi saya pada contact dan platform yang tersedia.</p>
             <div class="flex space-x-4">
                 <a class="bg-black text-white px-4 py-2 rounded mb-12 slide-up" href="#" onclick="showCardIfNoLink(event)">Download CV <i class="fas fa-external-link-alt"></i></a>
                 <a class="text-black underline mt-2 mb-12 slide-up" href="mailto:adieyarolland@gmail.com">Contact</a>
             </div>
         </div>
     </main>
+
     <section class="p-8" id="Service">
-        <h2 class="text-3xl font-bold mb-4 mt-12 text-center fade-in">service</h2>
+        <h2 class="text-3xl font-bold mb-4 mt-12 text-center fade-in">Service</h2>
         <div class="container">
-            <div class="slide-up">
-                <div class="grid">
-                    <!-- Card 1 -->
-                    <div class="card">
-                        <div class="icon-container">
-                            <div class="icon bg-blue">
-                                <i class="fas fa-code"></i>
-                            </div>
-                        </div>
-                        <h3 class="title">MEMBUAT WEBSITE SIMPLE</h3>
-                        <p class="description">html, css, javascript</p>
-                        <div class="border-t border-blue"></div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="card">
-                        <div class="icon-container">
-                            <div class="icon bg-red">
-                                <i class="fas fa-video"></i>
-                            </div>
-                        </div>
-                        <h3 class="title">EDIT VIDEO</h3>
-                        <p class="description">capcut dan premier</p>
-                        <div class="border-t border-red"></div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="card">
-                        <div class="icon-container">
-                            <div class="icon bg-yellow">
-                                <i class="fas fa-image"></i>
-                            </div>
-                        </div>
-                        <h3 class="title">EDIT FOTO</h3>
-                        <p class="description">lightroom</p>
-                        <div class="border-t border-yellow"></div>
-                    </div>
-                    <!-- Card 4 -->
-                    <div class="card">
-                        <div class="icon-container">
-                            <div class="icon bg-purple">
-                                <i class="fas fa-tasks"></i>
-                            </div>
-                        </div>
-                        <h3 class="title">MEMBUAT PLAN TIM</h3><br>
-                        <p class="description"></p>
-                        <div class="border-t border-purple"></div>
-                    </div>
-                    <!-- Card 5 -->
-                    <div class="card">
-                        <div class="icon-container">
-                            <div class="icon bg-green">
-                                <i class="fas fa-hourglass-half"></i>
-                            </div>
-                        </div>
-                        <h3 class="title">COMING SOON</h3><br>
-                        <p class="description"></p>
-                        <div class="border-t border-green"></div>
-                    </div>
-                    <!-- Card 6 -->
-                    <div class="card">
-                        <div class="icon-container">
-                            <div class="icon bg-indigo">
-                                <i class="fas fa-hourglass-half"></i>
-                            </div>
-                        </div>
-                        <h3 class="title">COMING SOON</h3><br>
-                        <p class="description"></p>
-                        <div class="border-t border-indigo"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="p-8 flex flex-col md:flex-row items-center justify-between" id="about">
-        <div class="md:w-2/3">
-            <h2 class="text-3xl font-bold mb-4 slide-right">Biografi Singkat</h2>
-            <p class="text-gray-700 mb-4 slide-up">Dalam perjalanan hidup saya, saya banyak berkontribusi dalam lingkungan sekitar, saya berkesempatan untuk bisa di percaya diberbagai ragam bidang. Saya memiliki keahlian dalam membuat website, mengelola proyek, dan mengorganisir acara. Saya juga memiliki hobi dalam fotografi dan pembuatan film.</p>
-            <div class="flex flex-wrap gap-4 slide-right ">
-                <button class="bg-white border border-gray-300 rounded-full px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors duration-300 text-shadow">
-                    ketua ekstrakurikuler
-                </button>
-                <button class="bg-white border border-gray-300 rounded-full px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors duration-300">
-                    ketua pelaksana event
-                </button>
-                <button class="bg-white border border-gray-300 rounded-full px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors duration-300">
-                    Aktif dalam organisasi
-                </button>
-                <button class="bg-white border border-gray-300 rounded-full px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors duration-300">
-                   Dapat berbahasa ingris
-                </button>
-                <button class="bg-white border border-gray-300 rounded-full px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors duration-300">
-                    Sering mengikuti pelatihan
-                </button>
-            </div>
-        </div>
-        <div class="md:w-1/3 mt-4 md:mt-0 md:ml-2 md:mr-4 slide-left hidden md:block">
-            <img src="gambar/rolland2.jpg" alt="A person holding a trophy and a laptop, standing on a sports field with trees and buildings in the background" class="object-scale-down w-full h-auto rounded-lg shadow-md" />
-        </div>
-    </section>
-    <section class="p-8" id="skill">
-        <h2 class="text-3xl font-bold mb-4 text-center fade-in">skills</h2>
-        <div class="container">
-            <div class="grid slide-up">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 <!-- Card 1 -->
                 <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
                     <div class="bg-blue-500 rounded-full p-4 mb-4">
                         <i class="fas fa-code text-white text-2xl"></i>
                     </div>
-                    <h2 class="text-center text-lg font-semibold mb-4">WEB BUILDER DAN DEVELOPMENT</h2>
-                    <div class="w-full border-t-2 border-blue-500"></div>
+                    <h3 class="title">MEMBUAT WEBSITE SIMPLE</h3>
+                    <p class="description">HTML, CSS, JavaScript</p>
                 </div>
                 <!-- Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+                    <div class="bg-red-500 rounded-full p-4 mb-4">
+                        <i class="fas fa-video text-white text-2xl"></i>
+                    </div>
+                    <h3 class="title">EDIT VIDEO</h3>
+                    <p class="description">CapCut dan Premiere</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+                    <div class="bg-yellow-500 rounded-full p-4 mb-4">
+                        <i class="fas fa-image text-white text-2xl"></i>
+                    </div>
+                    <h3 class="title">EDIT FOTO</h3>
+                    <p class="description">Lightroom</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+                    <div class="bg-purple-500 rounded-full p-4 mb-4">
+                        <i class="fas fa-tasks text-white text-2xl"></i>
+                    </div>
+                    <h3 class="title">MEMBUAT PLAN TIM</h3>
+                </div>
+                <!-- Card 5 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+                    <div class="bg-green-500 rounded-full p-4 mb-4">
+                        <i class="fas fa-hourglass-half text-white text-2xl"></i>
+                    </div>
+                    <h3 class="title">COMING SOON</h3>
+                </div>
+                <!-- Card 6 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+                    <div class="bg-indigo-500 rounded-full p-4 mb-4">
+                        <i class="fas fa-hourglass-half text-white text-2xl"></i>
+                    </div>
+                    <h3 class="title">COMING SOON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-8 flex flex-col md:flex-row items-center justify-between" id="about">
+        <div class="md:w-2/3">
+            <h2 class="text-3xl font-bold mb-4 slide-right">Biografi Singkat</h2>
+            <p class="text-gray-700 mb-4 slide-up">Dalam perjalanan hidup saya, saya banyak berkontribusi dalam lingkungan sekitar, saya berkesempatan untuk bisa dipercaya di berbagai ragam bidang. Saya memiliki keahlian dalam membuat website, mengelola proyek, dan mengorganisir acara. Saya juga memiliki hobi dalam fotografi dan pembuatan film.</p>
+            <div class="flex flex-wrap gap-4 slide-right">
+                <button class="bg-white border border-gray-300 rounded-full px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors duration-300">Ketua Ekstrakurikuler</button>
+                <button class="bg-white border border-gray-300 rounded-full px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors duration-300">Ketua Pelaksana Event</button>
+                <button class="bg-white border border-gray-300 rounded-full px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors duration-300">Aktif dalam Organisasi</button>
+                <button class="bg-white border border-gray-300 rounded-full px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors duration-300">Dapat Berbahasa Inggris</button>
+                <button class="bg-white border border-gray-300 rounded-full px-4 py-2 text-gray-700 hover:bg-gray-200 transition-colors duration-300">Sering Mengikuti Pelatihan</button>
+            </div>
+        </div>
+        <div class="md:w-1/3 mt-4 md:mt-0 md:ml-2 md:mr-4 slide-left hidden md:block">
+            <img src="gambar/rolland2.jpg" alt="A person holding a trophy and a laptop" class="object-scale-down w-full h-auto rounded-lg shadow-md" />
+        </div>
+    </section>
+
+    <section class="p-8" id="skill">
+        <h2 class="text-3xl font-bold mb-4 text-center fade-in">Skills</h2>
+        <div class="container">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 slide-up">
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+                    <div class="bg-blue-500 rounded-full p-4 mb-4">
+                        <i class="fas fa-code text-white text-2xl"></i>
+                    </div>
+                    <h2 class="text-center text-lg font-semibold mb-4">WEB BUILDER DAN DEVELOPMENT</h2>
+                </div>
                 <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
                     <div class="bg-red-500 rounded-full p-4 mb-4">
                         <i class="fas fa-calendar-alt text-white text-2xl"></i>
                     </div>
                     <h2 class="text-center text-lg font-semibold mb-4">EVENT ORGANIZER</h2>
-                    <div class="w-full border-t-2 border-red-500"></div>
                 </div>
-                <!-- Card 3 -->
                 <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
                     <div class="bg-yellow-500 rounded-full p-4 mb-4">
                         <i class="fas fa-users text-white text-2xl"></i>
                     </div>
                     <h2 class="text-center text-lg font-semibold mb-4">PROJECT DAN CLUB LEADER</h2>
-                    <div class="w-full border-t-2 border-yellow-500"></div>
                 </div>
-                <!-- Card 4 -->
                 <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
                     <div class="bg-purple-500 rounded-full p-4 mb-4">
                         <i class="fas fa-camera text-white text-2xl"></i>
                     </div>
                     <h2 class="text-center text-lg font-semibold mb-4">PHOTOGRAPHER</h2>
-                    <div class="w-full border-t-2 border-purple-500"></div>
                 </div>
-                <!-- Card 5 -->
                 <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
                     <div class="bg-green-500 rounded-full p-4 mb-4">
                         <i class="fas fa-video text-white text-2xl"></i>
                     </div>
                     <h2 class="text-center text-lg font-semibold mb-4">FILM MAKER</h2>
-                    <div class="w-full border-t-2 border-green-500"></div>
                 </div>
-                <!-- Card 6 -->
                 <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
                     <div class="bg-indigo-500 rounded-full p-4 mb-4">
                         <i class="fas fa-tools text-white text-2xl"></i>
                     </div>
                     <h2 class="text-center text-lg font-semibold mb-4">TECHNICIAN</h2>
-                    <div class="w-full border-t-2 border-indigo-500"></div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="p-8" id="projects">
-        <h2 class="text-3xl font-bold mb-4 text-center fade-in">Projects gallery</h2>
+        <h2 class="text-3xl font-bold mb-4 text-center fade-in">Projects Gallery</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <div class="relative slide-right">
                 <img alt="foto jaya IT" class="w-full h-48 rounded-lg shadow-lg" src="gambar/ITCLUB.png"/>
@@ -236,49 +196,39 @@
             </div>
         </div>
     </section>
-     <!-- Card Coming Soon -->
-     <div id="coming-soon-card" class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
+
+    <!-- Card Coming Soon -->
+    <div id="coming-soon-card" class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
         <div class="bg-white p-6 rounded-lg shadow-lg text-left">
             <h2 class="text-xl font-bold mb-4">Coming<br> Soon...</h2>
             <div class="flex justify-between">
                 <button onclick="toggleCard()" class="bg-gray-300 text-black mr-4 px-4 py-2 rounded">Back</button>
-                <button class="bg-gray-300 text-black  px-4 py-2 rounded">
-                    <div class="social-links flex justify-center">
-                    <a class="text-black mx-2" href="https://x.com/rolland_AP"><i class="fab fa-twitter"></i></a>
-                    <a class="text-black mx-2"  href="#" onclick="showCardIfNoLink(event)"><i class="fab fa-linkedin"></i></a>
-                    <a class="text-black mx-2" href="https://github.com/Bahlolpro"><i class="fab fa-github"></i></a>
-                    <a class="text-black mx-2" href="https://www.instagram.com/rollandaditya/#"><i class="fab fa-instagram"></i></a>
-                </div></button>
+                <button class="bg-gray-300 text-black px-4 py-2 rounded">Empty</button>
             </div>
         </div>
     </div>
- 
+
     <footer class="p-8 bg-gray-100 text-center">
         <div class="flex justify-center mb-4">
             <p class="text-gray-600 mx-4">
                 Email: <a href="mailto:adieyarolland@gmail.com" class="text-blue-500">adieyarolland@gmail.com</a>
             </p>
-            <p class="text-gray-600 mx-4">
-                Alamat: Tanggerang, Indonesia
-            </p>
-            <p class="text-gray-600 mx-4">
-                IG: <a href="https://www.instagram.com/rollandaditya/#" class="text-blue-500">@rollandadityap</a>
-            </p>
+            <p class="text-gray-600 mx-4">Alamat: Tanggerang, Indonesia</p>
+            <p class="text-gray-600 mx-4">IG: <a href="https://www.instagram.com/rollandaditya/#" class="text-blue-500">@rollandadityap</a></p>
         </div>
         <p class="text-gray-600 mb-4">&copy; 2025 Rolland Aditya P. All rights reserved.</p>
         <div class="social-links flex justify-center mb-4">
             <a class="text-black mx-2" href="https://x.com/rolland_AP"><i class="fab fa-twitter"></i></a>
-            <a class="text-black mx-2"  href="#" onclick="showCardIfNoLink(event)"><i class="fab fa-linkedin"></i></a>
+            <a class="text-black mx-2" href="#" onclick="showCardIfNoLink(event)"><i class="fab fa-linkedin"></i></a>
             <a class="text-black mx-2" href="https://github.com/Bahlolpro"><i class="fab fa-github"></i></a>
             <a class="text-black mx-2" href="https://www.instagram.com/rollandaditya/#"><i class="fab fa-instagram"></i></a>
         </div>
         <a href="#home" class="back-to-top bg-black text-white p-4 rounded-full fixed bottom-4 right-4">
             <i class="fas fa-arrow-up"></i>
         </a>
-
     </footer>
-    <script>
 
+    <script>
         document.getElementById('menu-toggle').addEventListener('click', function() {
             var navLinks = document.getElementById('nav-links');
             if (navLinks.style.display === 'flex') {
@@ -287,6 +237,19 @@
                 navLinks.style.display = 'flex';
             }
         });
+
+        function showCardIfNoLink(event) {
+            if (!event.target.href) {
+                const card = document.getElementById('coming-soon-card');
+                card.classList.add('visible'); // Tampilkan card
+                event.preventDefault();
+            }
+        }
+
+        function toggleCard() {
+            const card = document.getElementById('coming-soon-card');
+            card.classList.toggle('visible'); // Toggle card
+        }
 
         // Function to add 'visible' class to elements when they are in the viewport
         function reveal() {
@@ -304,32 +267,8 @@
             }
         }
 
-        function showCardIfNoLink(event) {
-            if (!event.target.href) {
-                const card = document.getElementById('coming-soon-card');
-                card.classList.add('visible'); // Tampilkan card
-                event.preventDefault();
-            }
-        }
-
-        function toggleCard() {
-            const card = document.getElementById('coming-soon-card');
-            card.classList.toggle('visible'); // Toggle card
-        }
-        function typewriter(element) {
-            element.classList.add("typewriter");
-        }
-
-        
-
-        // Menambahkan kelas "typewriter" setelah 1 detik
-        setTimeout(() => {
-            typewriter(document.querySelector(".typewriter"));
-        }, 1000);
         window.addEventListener('scroll', reveal);
-
-        // To check the scroll position on page load
-        reveal();
+        reveal(); // To check the scroll position on page load
     </script>
 </body>
 </html>
