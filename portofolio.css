@@ -259,7 +259,7 @@ section p {
 footer {
     background-color: #f8f8f8;
     text-align: center;
-    
+    justify-content: space-between; 
 }
 
 footer p {
@@ -269,7 +269,7 @@ footer p {
 
 footer .social-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 1rem;
 }
 
